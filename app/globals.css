@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; /* left */
+  }
+  50% {
+    background-position: 100% 50%;/* moving to right */
+  }
+  100% {
+    background-position: 0% 50%;/* and moving back to left */
+  }
+}
+
+.hover\:animate-gradient:hover {
+  animation: gradient 4s ease infinite;
+}
